@@ -68,3 +68,65 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+DESCRIPTION
+-----------This web application is built using React.js and JavaScript and is designed to automatically detect nudity in images and blur it instantly, providing a content-safe experience in real time. It utilizes a powerful machine learning model to identify inappropriate content and acts immediately to obscure it — ensuring users can browse or upload images safely.
+
+### 🛠️ Technologies Used:
+Frontend Framework: React.js
+React enables fast and interactive user interfaces with a responsive experience.
+
+Programming Language: JavaScript
+The core logic, event handling, and API calls are managed using vanilla JavaScript alongside React.
+
+Package Used for Nudity Detection:
+nsfwjs
+A JavaScript library powered by TensorFlow.js that uses a pre-trained model to classify images into categories like neutral, porn, sexy, hentai, and drawings.
+
+### ⚙️ How It Works:
+Image Upload or Preview
+Users upload or preview an image on the platform.
+
+### NSFWJS Model Loads
+The app loads the NSFWJS model asynchronously using TensorFlow.js.
+
+### Image Classification
+Once the model is loaded, the uploaded image is analyzed in the browser to determine if it contains nudity or adult content.
+
+### Real-Time Detection
+If any category crosses a defined threshold (e.g., porn or sexy > 0.7 confidence), the image is classified as inappropriate.
+
+### Blurring Mechanism
+A CSS blur effect (or canvas-based masking) is applied instantly to the detected image to hide nudity.
+
+### Result Display
+The user is either warned or shown a blurred image based on the detection result, with a toggle for authorized users (if needed).
+
+### 🔐 Key Features:
+
+### 🔍 Client-side Detection:
+No image is sent to a server. Detection happens locally in the browser, enhancing privacy and speed.
+
+### 
+🚫Automatic Censorship: Inappropriate content is blurred automatically without user intervention.
+
+### 
+⚡Real-Time Results: The TensorFlow.js model operates without page reloads, making the app feel smooth and fast.
+
+### 
+🧩 Pluggable Logic: The detection threshold or categories can be customized for different platform needs (e.g., parental control, forums, image moderation).
+
+### ✅ Use Cases:
+Social media image moderation
+
+Educational platforms to avoid exposure to NSFW content
+
+Parental control tools
+
+Chat/image-sharing applications
+
+Privacy-first content safety for browser extensions
+
+
