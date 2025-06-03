@@ -1,0 +1,82 @@
+/* Styles for the main container */
+.nudes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styles for the webcam wrapper */
+  .webcam-wrapper {
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Button styling */
+  .capture-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .capture-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+  .blurred-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); 
+    image-rendering: pixelated; 
+    filter: contrast(0.8); 
+    z-index: 3;
+  }
+
+  /* Webcam styles */
+  .webcam {
+    width: 800px;
+    height: 700px;
+    z-index: 1;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../../assests//bg.png"); 
+    height: 100%;
+    width: 100%;
+
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+  
+
+
+  .logo{
+    position: absolute;
+    top: 34px;
+    left: 40px;
+  }
+  .logo img{
+    width: 20px;
+    height: 20px;
+  }
+  
